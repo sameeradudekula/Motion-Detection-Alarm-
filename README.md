@@ -1,2 +1,33 @@
-# Motion-Detection-Alarm-
-Motion Detection Alarm using a PIR sensor to detect human movement and trigger an alarm for security applications.
+int pirPin = 2;
+
+void setup() {
+
+  pinMode(pirPin, INPUT);
+
+  pinMode(13, OUTPUT);
+
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  int motion = digitalRead(pirPin);
+
+  if(motion == HIGH) {
+
+    digitalWrite(13, HIGH);
+
+    Serial.println("Motion Detected!");
+
+  }
+  else {
+
+    digitalWrite(13, LOW);
+
+    Serial.println("No Motion");
+
+  }
+
+  delay(100);
+}
+
