@@ -1,1 +1,1 @@
-Motion Detection Alarm using a PIR sensor to detect human movement and tri
+Motion Detection Alarm System using Arduino and PIR Sensor for motion detection and LED-based alert indication. Developed using Tinkercad simulation.
